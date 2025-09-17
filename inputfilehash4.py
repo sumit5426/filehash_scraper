@@ -127,8 +127,8 @@ if __name__ == "__main__":
     with open(INPUT_CSV, 'r') as f:
         reader = list(csv.DictReader(f))
 
-    START_ROW = 160000
-    END_ROW = 165000
+    START_ROW = 195000
+    END_ROW = 200000
 
     reader = reader[START_ROW:END_ROW]
 
