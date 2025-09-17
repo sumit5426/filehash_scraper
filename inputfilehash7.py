@@ -129,7 +129,8 @@ if __name__ == "__main__":
         reader = list(csv.DictReader(f))
 
     START_ROW = 175000
-    reader = reader[START_ROW:]
+    END_ROW = 180000
+    reader = reader[START_ROW:END_ROW]
 
     total_rows = len(reader)
     log_debug(f"Rows after slicing: {total_rows}")
